@@ -29,6 +29,14 @@ p{
   line-height: 20px;
   letter-spacing: .5px;
 }
+.section-title{
+  font-size: 40px;
+  color: darkslategray;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
 /* <!-- Hero Section -->*/
 #hero{
   background-image: url(https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_1280.jpg);
@@ -73,14 +81,6 @@ p{
   margin: 0 auto;
   padding: 100px 0;
 }
-#about .section-title{
-  font-size: 40px;
-  color: darkslategray;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-}
 #about .about-top p{
   font-size: 18px;
   margin-top: 5px;
@@ -121,6 +121,55 @@ text-transform: uppercase;
 #about .about-item p{
   color: darkslategray;
   text-align: left;
-  font-size: 14px;
-  line-height: 19px;
+}
+/* <!-- Projects Section -->*/
+#projects .projects{
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#projects .projects-header h1{
+  margin-bottom: 50px;
+}
+#projects .all-projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#projects .project-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#projects .project-info{
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: burlywood;
+  color: darkslategray;
+}
+#projects .project-info h1{
+  font-size: 30px;
+}
+#projects .project-info h2{
+  font-size: 18px;
+  margin-top: 10px;
+}
+#projects .project-info p{
+  color: darkslategray;
+}
+#projects .project-img{
+  flex-basis: 50%;
+  height: 300px;
 }
