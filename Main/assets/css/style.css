@@ -65,15 +65,15 @@ p{
   color: antiquewhite;
   background-color:darkslategray;
 }
-/* <!-- Service Section -->*/
-#service .service{
+/* <!-- About Section -->*/
+#about .about{
   flex-direction: column;
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
 }
-#service .section-title{
+#about .section-title{
   font-size: 40px;
   color: darkslategray;
   margin-bottom: 10px;
@@ -81,20 +81,20 @@ p{
   letter-spacing: 3px;
   text-align: center;
 }
-#service .service-top p{
+#about .about-top p{
   font-size: 18px;
   margin-top: 5px;
   line-height: 25px;
   letter-spacing: 1px;
 }
-#service .service-bottom{
+#about .about-bottom{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 25px;
   flex-wrap: wrap;
 }
-#service .service-item{
+#about .about-item{
   flex-basis: 80%;
   display: flex;
   align-items: flex-start;
@@ -107,18 +107,18 @@ p{
   margin: 10px 5%;
   position: relative;
 }
-#service .service-bottom .icon{
+#about .about-bottom .icon{
   height: 80px;
   width: 80px;
   margin-bottom: 20px;
 }
-#service .service-item h2{
+#about .about-item h2{
 font-size:medium;
 color: darkslategray;
 margin-bottom: 10px;
 text-transform: uppercase;
 }
-service .service-item p{
+#about .about-item p{
   color: darkslategray;
   text-align: left;
   font-size: 14px;
