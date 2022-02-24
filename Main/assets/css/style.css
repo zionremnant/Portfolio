@@ -5,13 +5,13 @@
 }
 html{
   font-size: 10px;
-  font-family:monospace;
+  font-family:Arial, Helvetica, sans-serif;
 }
 a{
   text-decoration: none;
 }
 .container{
-  height: 650px;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -22,22 +22,19 @@ img{
   width: 100%;
   object-fit: cover;
 }
+p{
+  color: darkslategray;
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: .5px;
+}
 /* <!-- Hero Section -->*/
 #hero{
-  background-image: url(/Users/zionyang/UCLA-VIRT-FSF-FT-02-2022-U-LOL/02-Advanced-CSS/02-Homework/Portfolio/Main/assets/images/devices.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_1280.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
-  z-index: 1;
-}
-#hero::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
 }
 #hero .hero{
   max-width: 1200px;
@@ -63,7 +60,6 @@ img{
   letter-spacing: 1px;
   margin-top: 30px;
   transition: .3s ease;
-  transition-property: background-color, color;
 }
 #hero .cta:hover{
   color: antiquewhite;
@@ -78,8 +74,7 @@ img{
   padding: 100px 0;
 }
 #service .section-title{
-  font-size: 64px;
-  font-weight: 300;
+  font-size: 40px;
   color: darkslategray;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -87,16 +82,16 @@ img{
   text-align: center;
 }
 #service .service-top p{
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 5px;
   line-height: 25px;
-  font-weight: 300;
   letter-spacing: 1px;
 }
 #service .service-bottom{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 25px;
   flex-wrap: wrap;
 }
 #service .service-item{
@@ -107,29 +102,25 @@ img{
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
-  background-image: url(/Users/zionyang/UCLA-VIRT-FSF-FT-02-2022-U-LOL/02-Advanced-CSS/02-Homework/Portfolio/Main/assets/images/coffee.jpg);
+  background-image: url(https://img.freepik.com/free-vector/modern-abstract-background-with-diagonal-lines-stripes-elements-white-gray-color-pastel-gradient-with-digital-technology-theme_8221-1023.jpg?size=626&ext=jpg);
   background-size: cover;
   margin: 10px 5%;
   position: relative;
-  z-index: 1;
-}
-#service .service-item::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  font-weight: 100%;
-  background-image: linear-gradient(tan);
-  z-index: -1;
 }
 #service .service-bottom .icon{
   height: 80px;
   width: 80px;
   margin-bottom: 20px;
 }
-#service .service-bottom .icon img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+#service .service-item h2{
+font-size:medium;
+color: darkslategray;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+service .service-item p{
+  color: darkslategray;
+  text-align: left;
+  font-size: 14px;
+  line-height: 19px;
 }
