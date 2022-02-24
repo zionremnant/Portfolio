@@ -1,107 +1,67 @@
-/* Create CSS variables at the root of the document to be used throughout the style sheet */
-:root {
-  --white: #fff;
-  --dark-blue: #13293d;
-  --tan: #d8a47f;
-  /* You can use it with any value that is repeated throughout the sheet */
-  --border-radius: 50px;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-body {
-  font-size: 16px;
+html{
+  font-size: 10px;
+  font-family:monospace;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  height: 650px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+/* <!-- Hero Section -->*/
+#hero{
+  background-image: url(/Users/zionyang/UCLA-VIRT-FSF-FT-02-2022-U-LOL/02-Advanced-CSS/02-Homework/Portfolio/Main/assets/images/devices.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#hero::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+#hero .hero{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
   justify-content: flex-start;
 }
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+#hero h1{
+  display: block;
+  width: fit-content;
+  font-size: 40px;
+  position: relative;
+  color:antiquewhite;
 }
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+#hero .cta{
+  display: inline-block;
+  padding: 10px 30px;
+  color: antiquewhite;
+  background-color: transparent;
+  border: 2px solid darkslategray;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  transition: .3s ease;
+  transition-property: background-color, color;
 }
+#hero .cta:hover{
+  color: antiquewhite;
+  background-color:darkslategray;
 
-header {
-  padding: 40px;
-  text-align: center;
-  /* Refer to CSS values by the name of the custom property we assigned it */
-  background: var(--dark-blue);
-  color: var(--white);
-}
-
-nav {
-  display: flex;
-  background-color: var(--tan);
-}
-
-nav a {
-  color: var(--dark-blue);
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-nav a:hover {
-  background-color: var(--white);
-  color: var(--dark-blue);
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-footer {
-  width: 100%;
-  bottom: 0;
-  padding: 20px;
-  text-align: center;
-  background: var(--dark-blue);
-  color: var(--white);
-  margin-top: auto;
-}
-
-.products {
-  flex: 1;
-  background-color: var(--white);
-  padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.card {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: var(--border-radius);
-  padding: 10px;
-  flex: 0 0 300px;
-  transform: rotate(8deg);
-  box-shadow: 10px 10px 5px #aaaaaa;
-  margin: 20px;
-}
-
-.card > header {
-  /* This is the same as `border-radius: 50px 50px 0 0 */
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  padding: 20px;
-}
-
-.card > p {
-  text-align: center;
-}
-
-.card > img {
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
-  }
 }
