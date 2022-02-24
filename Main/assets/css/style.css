@@ -17,6 +17,11 @@ a{
   align-items: center;
   justify-content: center;
 }
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 /* <!-- Hero Section -->*/
 #hero{
   background-image: url(/Users/zionyang/UCLA-VIRT-FSF-FT-02-2022-U-LOL/02-Advanced-CSS/02-Homework/Portfolio/Main/assets/images/devices.jpg);
@@ -84,7 +89,47 @@ a{
 #service .service-top p{
   font-size: 22px;
   margin-top: 5px;
-  line-height: 40px;
+  line-height: 25px;
   font-weight: 300;
   letter-spacing: 1px;
+}
+#service .service-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#service .service-item{
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(/Users/zionyang/UCLA-VIRT-FSF-FT-02-2022-U-LOL/02-Advanced-CSS/02-Homework/Portfolio/Main/assets/images/coffee.jpg);
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+}
+#service .service-item::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  font-weight: 100%;
+  background-image: linear-gradient(tan);
+  z-index: -1;
+}
+#service .service-bottom .icon{
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+#service .service-bottom .icon img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
