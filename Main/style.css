@@ -53,6 +53,11 @@ p{
   color: antiquewhite;
   background-color:darkslategray;
 }
+.brand h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: antiquewhite;
+}
 
 /* <!-- Hero Section -->*/
 #hero{
@@ -244,4 +249,25 @@ text-transform: uppercase;
   font-size: 13px;
   line-height: 20px;
   text-align:center;
+}
+/* <!-- Footer Section -->*/
+#footer{
+  background-color: darkslategray;
+}
+#footer .footer{
+  min-height: 200px;
+  flex-direction:column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+#footer h2{
+  color: antiquewhite;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#footer .social-icon{
+  display:flex;
+  margin-bottom: 30px;
 }
