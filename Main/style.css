@@ -110,51 +110,6 @@ p{
   padding: 20px;
   display: block;
 }
-#header .sandwich{
-  z-index: 100;
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-  border: 3px solid antiquewhite;
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transform: scale(.8);
-  margin-right: 20px;
-}
-#header .sandwich .bar{
-height: 2px;
-width: 30px;
-position: relative;
-background-color: antiquewhite;
-z-index: -1;
-}
-#header .sandwich .bar::after,
-#header .sandwich .bar::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background-color: antiquewhite;
-  transition: .3s ease;
-  transition-property: top, bottom;
-}
-#header .sandwich .bar::after{
-  top: 8px;
-}
-#header .sandwich .bar::before{
-  bottom: 8px;
-}
-#header .sandwich.active .bar::before{
-  bottom: 0;
-}
-#header .sandwich.sandwich.active .bar::after{
-  top: 0;
-}
 
 /* <!-- Hero Section -->*/
 #hero{
@@ -186,21 +141,14 @@ z-index: -1;
   padding: 100px 0;
 }
 #intro .intro-top{
-  width: 500px;
-  max-width: 0 auto;
-}
-#intro .intro-top p{
-  font-size: 18px;
-  margin-top: 5px;
-  line-height: 25px;
-  letter-spacing: 1px;
-  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 #intro .intro-bottom{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 50px;
   flex-wrap: wrap;
 }
 #intro .intro-item{
@@ -215,6 +163,8 @@ z-index: -1;
   background-size: cover;
   margin: 10px 5%;
   position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 #intro .intro-bottom .icon{
   height: 80px;
@@ -304,7 +254,7 @@ text-transform: uppercase;
 }
 #about .col-right p{
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 #about .col-right .cta{
   color:burlywood;
@@ -463,9 +413,6 @@ text-transform: uppercase;
 }
 }
 @media only screen and (min-width: 1200px){
-  #header .sandwich{
-    display: none;
-  }
   #header .nav-list ul{
     position: initial;
     display: block;
