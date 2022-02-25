@@ -79,7 +79,7 @@ p{
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  max-width: 1300px;
+  max-width: 992px;
   padding: 0 10px;
 }
 #header .nav-list ul{
@@ -119,7 +119,7 @@ p{
   position: relative;
 }
 #hero .hero{
-  max-width: 1200px;
+  max-width: 992px;
   margin: 0 auto;
   padding: 0 50px;
   justify-content: flex-start;
@@ -151,6 +151,9 @@ p{
   margin-top: 50px;
   flex-wrap: wrap;
 }
+#intro .intro-top p{
+  text-align: center;
+}
 #intro .intro-item{
   flex-basis: 80%;
   display: flex;
@@ -179,12 +182,12 @@ text-transform: uppercase;
 }
 #intro .intro-item p{
   color: darkslategray;
-  text-align: left;
+  text-align: center;
 }
 /* <!-- Projects Section -->*/
 #projects .projects{
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 992px;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -236,7 +239,7 @@ text-transform: uppercase;
 #about .about{
   flex-direction: column-reverse;
   text-align: center;
-  max-width: 1200px;
+  max-width: 992px;
   margin: 0 auto;
   padding: 100px 20px;
 }
@@ -289,19 +292,18 @@ text-transform: uppercase;
 #contact .contact-item .icon img{
   object-fit: contain;
 }
-#contact .contact-item .contact-info{
+#contact .contact-item .contact{
   width: 100%;
-  padding-left: 20px;
+  padding-left: 15px;
   text-align: left;
 }
-#contact .contact-info h1{
-  font-size: 25px;
-  margin-bottom: 5px;
+#contact .contact h1{
+  font-size: 20px;
+  margin-bottom: 3px;
 }
-#contact .contact-info h2{
-  font-size: 13px;
+#contact .contact h2{
+  font-size: 11px;
   line-height: 20px;
-  text-align:center;
 }
 /* <!-- Footer Section -->*/
 #footer{
@@ -335,7 +337,28 @@ text-transform: uppercase;
   font-size: 13px;
 }
 /* <!-- Media Query -->*/
+@media only screen and (min-width:480px){
+  #header .nav-list ul{
+    position: initial;
+    display: block;
+    height: auto;
+    width:auto;
+    background-color: transparent;
+    text-align: center;
+  }
+  #header .nav-list ul li{
+    display: inline-block;
+    flex-direction: column;
+  }
+  #header .nav-list ul li a{
+    font-size: 10px;
+    margin: 13px;
+  }
+}
+
 @media only screen and (min-width:768px){
+  .nav{width: 100%;
+  }
   .cta{
     font-size: 25px;
     padding: 20px 60px;
@@ -412,7 +435,7 @@ text-transform: uppercase;
   padding-left: 20px;
 }
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 992px){
   #header .nav-list ul{
     position: initial;
     display: block;
