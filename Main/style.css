@@ -73,28 +73,28 @@ p{
   color: antiquewhite;
   background-color:darkslategray;
 }
-/* <!-- About Section -->*/
-#about .about{
+/* <!-- Intro Section -->*/
+#intro .intro{
   flex-direction: column;
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
 }
-#about .about-top p{
+#intro .intro-top p{
   font-size: 18px;
   margin-top: 5px;
   line-height: 25px;
   letter-spacing: 1px;
 }
-#about .about-bottom{
+#intro .intro-bottom{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 25px;
   flex-wrap: wrap;
 }
-#about .about-item{
+#intro .intro-item{
   flex-basis: 80%;
   display: flex;
   align-items: flex-start;
@@ -107,18 +107,18 @@ p{
   margin: 10px 5%;
   position: relative;
 }
-#about .about-bottom .icon{
+#intro .intro-bottom .icon{
   height: 80px;
   width: 80px;
   margin-bottom: 20px;
 }
-#about .about-item h2{
+#intro .intro-item h2{
 font-size:medium;
 color: darkslategray;
 margin-bottom: 10px;
 text-transform: uppercase;
 }
-#about .about-item p{
+#intro .intro-item p{
   color: darkslategray;
   text-align: left;
 }
