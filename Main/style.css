@@ -11,7 +11,7 @@ a{
   text-decoration: none;
 }
 .container{
-  min-height: 100vh;
+  min-height: 722px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -60,7 +60,100 @@ p{
   text-align: center;
 }
 /* <!-- Header Section -->*/
-#header
+#header{
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 1244px;
+  height: auto;
+}
+#header .header{
+  min-height: 58px;
+  background-color: rgba(31, 30, 30, 0.24);
+}
+#header .nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+#header .nav-list ul{
+  list-style: none;
+  position: absolute;
+  background-color: rgb(31, 30, 30);
+  width: 1244px;
+  height: 722px;
+  left: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden;
+  flex-direction: column;
+  transition: .6s ease left;
+}
+#header .nav-list ul.active{
+  left: 0;
+}
+#header .nav-list ul a{
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: antiquewhite;
+  text-transform: uppercase;
+  padding: 20px;
+  display: block;
+}
+#header .sandwich{
+  z-index: 100;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border: 3px solid antiquewhite;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: scale(.8);
+  margin-right: 20px;
+}
+#header .sandwich .bar{
+height: 2px;
+width: 30px;
+position: relative;
+background-color: antiquewhite;
+z-index: -1;
+}
+#header .sandwich .bar::after,
+#header .sandwich .bar::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: antiquewhite;
+  transition: .3s ease;
+  transition-property: top, bottom;
+}
+#header .sandwich .bar::after{
+  top: 8px;
+}
+#header .sandwich .bar::before{
+  bottom: 8px;
+}
+#header .sandwich.active .bar::before{
+  bottom: 0;
+}
+#header .sandwich.sandwich.active .bar::after{
+  top: 0;
+}
 
 /* <!-- Hero Section -->*/
 #hero{
@@ -340,7 +433,7 @@ text-transform: uppercase;
   padding: 100px 0;
   align-items: center;
   justify-content: center;
-  min-height: 20vh;
+  min-height: 144px;
 }
 #contact .contact-item{
   width: 100%;
@@ -367,6 +460,25 @@ text-transform: uppercase;
 }
 }
 @media only screen and (min-width: 1200px){
+  #header .sandwich{
+    display: none;
+  }
+  #header .nav-list ul{
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #header .nav-list ul li{
+    display: inline-block;
+  }
+  #header .nav-list ul li a{
+    font-size: 18px;
+  }
+  #header .nav-list ul a:after{
+    display: none;
+  }
   #intro .intro-bottom .intro-item{
     flex-basis: 22%;
     margin: 1.5%;
