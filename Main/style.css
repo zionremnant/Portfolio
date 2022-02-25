@@ -37,6 +37,23 @@ p{
   letter-spacing: 3px;
   text-align: center;
 }
+.cta{
+  display: inline-block;
+  padding: 10px 30px;
+  color: antiquewhite;
+  background-color: transparent;
+  border: 2px solid darkslategray;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  transition: .3s ease;
+}
+.cta:hover{
+  color: antiquewhite;
+  background-color:darkslategray;
+}
+
 /* <!-- Hero Section -->*/
 #hero{
   background-image: url(https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_1280.jpg);
@@ -57,22 +74,7 @@ p{
   position: relative;
   color:antiquewhite;
 }
-#hero .cta{
-  display: inline-block;
-  padding: 10px 30px;
-  color: antiquewhite;
-  background-color: transparent;
-  border: 2px solid darkslategray;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 30px;
-  transition: .3s ease;
-}
-#hero .cta:hover{
-  color: antiquewhite;
-  background-color:darkslategray;
-}
+
 /* <!-- Intro Section -->*/
 #intro .intro{
   flex-direction: column;
@@ -86,6 +88,7 @@ p{
   margin-top: 5px;
   line-height: 25px;
   letter-spacing: 1px;
+  text-align: center;
 }
 #intro .intro-bottom{
   display: flex;
@@ -173,3 +176,34 @@ text-transform: uppercase;
   flex-basis: 50%;
   height: 300px;
 }
+/* <!-- About Section -->*/
+#about .about{
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+#about .col-left{
+  width: 250px;
+  height: 360px;
+}
+#about .col-right {
+  width: 100%;
+}
+#about .col-right h2{
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#about .col-right p{
+  margin-bottom: 20px;
+  text-align: center;
+}
+#about .col-right .cta{
+  color: darkslategray;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
